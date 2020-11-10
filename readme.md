@@ -1,6 +1,6 @@
 # Modified Thrift Compiler Docker Image
 
-This Docker image contains the modified Thrift compiler hosted [here](https://github.com/guardian/french-thrift.git). It basically runs a version of Thrift that do not enforces reserved keyword usage, very useful when working with thrift object definitions based on older library versions.
+This Docker image contains the modified Thrift compiler hosted [here](https://github.com/guardian/french-thrift.git). It basically runs a version of Thrift that do not enforces reserved keyword usage, very useful when working with thrift object definitions based on older library versions. The output python files of the process are not compatible with Python 3, running `2to3` to those files may solve the problem.
 
 ## Requirements
 
